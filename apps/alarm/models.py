@@ -20,6 +20,9 @@ class Patient(models.Model):
         default=timezone.now
     )
 
+    def __str__(self):
+        return self.name
+
 
 class Alarm(models.Model):
 
@@ -27,7 +30,7 @@ class Alarm(models.Model):
         Patient, on_delete=models.CASCADE
     )
 
-    emision_date = models.DateTimeField(
+    notification = models.DateTimeField(
         blank=True,
         null=True
     )
@@ -39,6 +42,9 @@ class Alarm(models.Model):
     created_date = models.DateTimeField(
         default=timezone.now
     )
+
+    def __str__(self):
+        return '{} {}' .format(self.patient, self.notification)
 
 
 class CareNetwork(models.Model):
@@ -56,3 +62,6 @@ class CareNetwork(models.Model):
     created_date = models.DateTimeField(
         default=timezone.now
     )
+
+    def __str__(self):
+        return '{} {}'.format(self.careman, self.patient)

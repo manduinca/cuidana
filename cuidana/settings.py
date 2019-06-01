@@ -54,7 +54,7 @@ ROOT_URLCONF = 'cuidana.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['cuidana/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

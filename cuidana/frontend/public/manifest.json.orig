@@ -16,6 +16,11 @@
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#2e3191",
+<<<<<<< Updated upstream
+  "theme_color": "#4DBA87",
   "gcm_sender_id": "849603188728"
 }
+=======
+  "theme_color": "#2e3191"
+}
+>>>>>>> Stashed changes

@@ -1,5 +1,5 @@
 <template>
-  <div class="p-login e-container">
+  <form class="p-login e-container" v-on:submit="onSubmit">
     <div class="e-container-header"></div>
     <div class="e-container-body">
       <h3 class="e-h1 e-color-purple">Login</h3>
@@ -13,15 +13,18 @@
     </div>
 
     <div class="e-container-footer">
-      <button class="e-button">Continuar</button>
+      <button class="e-button" type="submit">Continuar</button>
     </div>
-  </div>
+  </form>
 </template>
 
 <script>
 export default {
-  components: {
-    //   HelloWorld
+  methods: {
+    onSubmit: function(e) {
+      e.preventDefault();
+      console.log("aa");
+    }
   }
 };
 </script>

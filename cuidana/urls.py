@@ -19,5 +19,6 @@ from django.urls import path
 
 urlpatterns = [
     path(r'admin/', admin.site.urls),
+    path(r'^webpush/', include('webpush.urls')),
     path(r'', include('apps.alarm.urls')),
 ]

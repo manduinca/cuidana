@@ -12,10 +12,12 @@
 
       <div class="p-dashboard__person-list">
         <div class="p-dashboard__person">
-          <div class="p-dashboard__person-img">
-            <img src="../assets/foto_alicia.png">
-          </div>
-          <label for class="p-dashboard__person-name">Alicia</label>
+          <router-link to="/paciente">
+            <div class="p-dashboard__person-img">
+              <img src="../assets/foto_alicia.png">
+            </div>
+            <label for class="p-dashboard__person-name">Alicia</label>
+          </router-link>
         </div>
 
         <div class="p-dashboard__person">
@@ -190,6 +192,7 @@ export default {
 
 .p-dashboard__person-name {
   color: #4d5b71;
+  text-decoration: none;
 }
 
 .p-dashboard__notification-header {

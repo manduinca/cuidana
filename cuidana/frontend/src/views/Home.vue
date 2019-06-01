@@ -3,7 +3,7 @@
     <div class="e-container-header"></div>
 
     <div class="e-container-body p-home__body">
-      <img class="p-home__body-img" alt="Vue logo" src="../assets/logo.svg">
+      <img v-on:click="onLogo" class="p-home__body-img" alt="Vue logo" src="../assets/logo.svg">
     </div>
 
     <div class="e-container-footer"></div>
@@ -14,9 +14,15 @@
 import { setTimeout } from "timers";
 export default {
   mounted() {
-    setTimeout(() => {
-      this.$router.push("login");
-    }, 2000);
+    setTimeout(() => {}, 2000);
+  },
+  methods: {
+    onLogo() {
+      document.body.requestFullscreen();
+      setTimeout(() => {
+        this.$router.push({ name: "Register" });
+      }, 2000);
+    }
   }
 };
 </script>

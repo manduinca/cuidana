@@ -12,6 +12,7 @@
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
 
+<<<<<<< Updated upstream
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
 
@@ -30,12 +31,23 @@
   firebase.initializeApp(firebaseConfig);
 </script>
 <body>
+=======
+<body onload="onLoadPage()">
+
+>>>>>>> Stashed changes
   <noscript>
     <strong>We're sorry but cuidana doesn't work properly without JavaScript enabled. Please enable it to
       continue.</strong>
   </noscript>
   <div id="app"></div>
   <!-- built files will be auto injected -->
+  <script>
+    function onLoadPage() {
+      setTimeout(() => {
+        // document.body.requestFullscreen()
+      }, 1500)
+    }
+  </script>
 </body>
 
 </html>

@@ -9,7 +9,26 @@
   <link rel="icon" href="<%= BASE_URL %>favicon.ico">
   <title>cuidana</title>
 </head>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDjmG8KZdxP7VTMnnjm9liTmJdfinfVHOE",
+    authDomain: "cuidana-fb1a7.firebaseapp.com",
+    databaseURL: "https://cuidana-fb1a7.firebaseio.com",
+    projectId: "cuidana-fb1a7",
+    storageBucket: "cuidana-fb1a7.appspot.com",
+    messagingSenderId: "849603188728",
+    appId: "1:849603188728:web:3cf4943133eb90a9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 <body>
   <noscript>
     <strong>We're sorry but cuidana doesn't work properly without JavaScript enabled. Please enable it to

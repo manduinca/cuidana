@@ -40,6 +40,11 @@ export default {
 
 .e-container-header {
   padding: 20px 20px 0 20px;
+
+  &.isNavigation {
+    background: #2e3191;
+    padding-bottom: 20px;
+  }
 }
 
 .e-container-body {
@@ -82,5 +87,28 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+.e-navigation {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.e-navigation-img {
+  width: 28px;
+  height: 35px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: -10px;
+}
+
+.e-navigation-title {
+  font-size: 16px;
+  font-weight: 600;
 }
 </style>

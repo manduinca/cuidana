@@ -7,6 +7,7 @@ import Register from './views/Register.vue'
 import CompletedRegister from './views/CompletedRegister.vue'
 import Dashboard from './views/Dashboard.vue'
 import Patient from './views/Patient.vue'
+import Medicament from './views/Medicament.vue'
 
 Vue.use(Router)
 
@@ -43,6 +44,11 @@ export default new Router({
       path: '/paciente',
       name: 'Patient',
       component: Patient
+    },
+    {
+      path: '/medicamento',
+      name: 'Medicament',
+      component: Medicament
     },
     {
       path: '/about',

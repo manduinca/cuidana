@@ -102,7 +102,7 @@
     </div>
 
     <div class="e-container-footer">
-      <button class="e-button" type="submit">Continuar</button>
+      <!-- <button class="e-button" type="submit">Continuar</button> -->
     </div>
   </div>
 </template>

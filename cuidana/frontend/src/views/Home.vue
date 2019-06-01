@@ -1,18 +1,37 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="p-home e-container">
+    <div class="e-container-header"></div>
+
+    <div class="e-container-body p-home__body">
+      <img class="p-home__body-img" alt="Vue logo" src="../assets/logo.svg">
+    </div>
+
+    <div class="e-container-footer"></div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import { setTimeout } from "timers";
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
+  mounted() {
+    setTimeout(() => {
+      this.$router.push("login");
+    }, 2000);
   }
-}
+};
 </script>
+
+<style lang="stylus">
+.p-home {
+  background: #2e3191;
+}
+
+.p-home__body {
+  text-align: center;
+}
+
+.p-home__body-img {
+  width: 150px;
+  height: 75px;
+}
+</style>

@@ -49,10 +49,7 @@ class Alarm(models.Model):
 
 class CareNetwork(models.Model):
 
-    careman = models.ForeignKey(
-        'auth.User',
-        on_delete=models.CASCADE
-    )
+    careman = models.ManyToManyField('auth.User')
 
     patient = models.ForeignKey(
         Patient,
@@ -64,4 +61,4 @@ class CareNetwork(models.Model):
     )
 
     def __str__(self):
-        return '{} {}'.format(self.careman, self.patient)
+        return '{} {}'.format("Network: ", self.patient)
